@@ -1,5 +1,5 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "http://api.urganchttb.uz/api";
+axios.defaults.baseURL = "http://localhost:8080/api";
 
 export default axios;
