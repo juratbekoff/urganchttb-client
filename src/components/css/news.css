@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+    .news_header_title {
+        font-size: 12px;
+    }
+
+    .news_header_all {
+        font-size: 13px;
+    }
+
+    .news_card_title {
+        font-size: 14px;
+    }
+
+    .news_card_descr {
+        font-size: 12px;
+    }
+
+    .news_card_btn {
+        font-size: 12px;
+        padding: 7px 12px;
+    }
+}
