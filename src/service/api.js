@@ -1,5 +1,5 @@
 import axios from "axios";
 
-const api = axios.create({ baseURL: "http://62.217.176.186:8080/api" });
+const api = axios.create({ baseURL: "http://api.urganchttb.uz/api" });
 
 export default api;
