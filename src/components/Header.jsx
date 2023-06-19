@@ -7,7 +7,7 @@ const Header = () => {
     <div className="mt-1">
       <div className="flex flex-col absolute gap-4 left-[10%] top-[40%] max-md:top-[22%] w-[35%] max-md:w-[60%]">
         <h1 className="font-semibold text-3xl max-md:inline-block max-md:text-[15px] max-md:leading-4">
-          Urganch Ahmad Birlashmasi!
+          Urganch Tibbiyot Birlashmasi!
         </h1>
         <p className="break-normal text-[17px] header_title">
           Sog' va salomat hayot uchun bizning tibbiyot boshqarmamiz sizning
