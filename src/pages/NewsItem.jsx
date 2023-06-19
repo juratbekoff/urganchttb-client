@@ -22,7 +22,7 @@ const NewsItemView = () => {
 
   useEffect(() => {
     getData();
-  }, items.id);
+  }, [newsId]);
 
   return (
     <div className="flex flex-col justify-center items-center gap-7 mt-[2%] mx-[20%] max-md:mx-[5%] max-md:mt-5 p-6 border-2 rounded-[2px]">
