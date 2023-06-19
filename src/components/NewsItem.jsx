@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
+import { api_url } from "../helpers/api";
+
 const NewsItem = ({ items }) => {
   return (
     <div className="w-full max-md:flex max-md:flex-col max-md:gap-3">
       <img
-        src={items.image}
+        src={`${api_url}/posts/img/${items.image}`}
         alt="image cannot be loaded!"
         className="border-2 h-[55vh] ml-[10%] max-md:ml-[0%] w-[80%] max-md:w-[100%] max-md:h-[30vh]"
       />

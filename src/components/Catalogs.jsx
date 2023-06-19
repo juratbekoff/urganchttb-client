@@ -1,9 +1,11 @@
+import { api_url } from "../helpers/api";
+
 const Catalogs = ({ ...elem }) => {
   return (
     <div className="flex bg-white gap-12 p-5 border shadow-lg w-full max-md: flex max-md:flex-col max-md: items-center max-md:gap-4">
       <div className="flex items-center just w-[30%] max-md:w-full">
         <img
-          src={elem.image ? elem.image : "images/25-son.png"}
+          src={`${api_url}/catalogs/img/${elem.image}`}
           className="w-full h-[25vh] border-2 border-orange-400 max-md:h-[20vh]"
           alt="#"
         />

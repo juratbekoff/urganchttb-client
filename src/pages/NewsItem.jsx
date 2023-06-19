@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/no-unescaped-entities */
 import { useParams } from "react-router-dom";
 import { NewsItem } from "../components";
@@ -6,7 +7,7 @@ import { postService } from "../service";
 
 const NewsItemView = () => {
   const { newsId } = useParams();
-  const [items, setItems] = useState(0);
+  const [items, setItems] = useState({});
 
   const getData = async () => {
     return await postService
@@ -21,7 +22,7 @@ const NewsItemView = () => {
 
   useEffect(() => {
     getData();
-  });
+  }, items);
 
   return (
     <div className="flex flex-col justify-center items-center gap-7 mt-[2%] mx-[20%] max-md:mx-[5%] max-md:mt-5 p-6 border-2 rounded-[2px]">
