@@ -1,9 +1,11 @@
+import { api_url } from "../helpers/api";
+
 const Institutions = ({ ...elem }) => {
   return (
     <div className="flex gap-5 bg-white p-5 border w-full shadow-lg max-md: flex max-md:flex-col max-md: items-center max-md:gap-4">
       <div className="flex items-center just w-[25%] max-md:w-full">
         <img
-          src={elem.image ? elem.image : "images/25-son.png"}
+          src={`${api_url}/institutions/img/${elem.image}`}
           className="w-full h-[25vh] border-2 border-orange-400 max-md:h-[20vh]"
           alt="#"
         />
