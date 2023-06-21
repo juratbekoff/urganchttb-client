@@ -34,7 +34,7 @@ const SubmitForm = () => {
       alert("SUCCESS");
     } catch (error) {
       console.log(error);
-      alert("ERROR")
+      alert("ERROR");
     }
 
     setItems({ name: "", surname: "", email: "", phone: "", message: "" });

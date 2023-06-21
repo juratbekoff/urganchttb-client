@@ -12,7 +12,7 @@ const Catalogs = ({ ...elem }) => {
       </div>
       <div className="flex flex-col gap-2 w-[100%]">
         <h1 className="text-2xl font-medium max-md:text-[16px] max-md:mt-0 leading-5">
-          Juratbek xudayberganov maktabimizga tashrif buyurdilar
+          {elem.title}
         </h1>
         <p className="text-[16px] font-normal break-all max-md:text-[13.5px] max-md:mt-0 max-md:leading-4">
           {elem.descr}
