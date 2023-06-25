@@ -7,6 +7,7 @@ import {
   ContactsView,
   NewsItemView,
 } from "../pages";
+import { About, Leadership } from "../components";
 
 export const ClientRouter = () => {
   return (
@@ -19,6 +20,8 @@ export const ClientRouter = () => {
           <Route path="/contact" element={<ContactsView />} />
           <Route path="/news" element={<AllNewsView />} />
           <Route path="/item/:newsId" element={<NewsItemView />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/leadership" element={<Leadership />} />
         </Route>
       </Routes>
     </>

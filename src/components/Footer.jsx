@@ -8,7 +8,7 @@ const Footer = () => {
         <img src="/images/logo1.png" alt="smth" />
       </a>
       <ul className="flex flex-col gap-1 max-md: flex max-md:flex-col max-md: items-center">
-        <h1 className="font-semibold text-xl pb-1">Sayt bo'ylab</h1>
+        <h1 className="font-semibold text-xl pb-1 max-md:hidden">Sayt bo'ylab</h1>
         <Link to={"/"} className="text-[17px]">
           Asosiy
         </Link>
@@ -38,7 +38,7 @@ const Footer = () => {
         <ul className="flex flex-col gap-2 max-md: flex max-md:flex-col max-md: items-center">
           <h1 className="font-semibold text-xl pb-1">Tarmoqlar</h1>
           <ul className="flex gap-2">
-            <a href="#">
+            <a href="https://t.me/urganchttbuz">
               <img src="/images/telegram.png" width="20px" alt="#" />
             </a>
             <a href="#">

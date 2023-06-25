@@ -5,11 +5,11 @@ import "./css/header.css";
 const Header = () => {
   return (
     <div className="mt-1">
-      <div className="flex flex-col absolute gap-4 left-[10%] top-[40%] max-md:top-[22%] w-[35%] max-md:w-[60%]">
-        <h1 className="font-semibold text-3xl max-md:inline-block max-md:text-[15px] max-md:leading-4">
-          Urganch Tibbiyot Birlashmasi!
+      <div className="flex flex-col absolute gap-4 pl-8 left-[10%] top-[40%] max-md:top-[22%] w-[35%] max-md:w-[100%]">
+        <h1 className="font-bold text-white text-3xl max-md:inline-block max-md:text-[14px] max-md:leading-4 max-md:font-medium">
+          Urganch Tuman Tibbiyot Birlashmasi!
         </h1>
-        <p className="break-normal text-[17px] header_title">
+        <p className="break-normal text-[17px] header_title text-white font-semibold">
           Sog' va salomat hayot uchun bizning tibbiyot boshqarmamiz sizning
           do'stingiz. Biz sizning hayotingizni yaxshilaymiz va sizga chin
           ko'ngildan baxt istaymiz.
@@ -21,7 +21,7 @@ const Header = () => {
           Bog'lanish
         </Link>
       </div>
-      <img src="/images/header.png" alt="smth" className="max-md:h-[25vh]" />
+      <img src="/images/header2.jpg" alt="smth" className="max-md:h-[25vh] w-full h-[700px] bg-cover" />
     </div>
   );
 };

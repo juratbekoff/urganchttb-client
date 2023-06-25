@@ -8,6 +8,8 @@ const NavBar = () => {
     { name: "Yangiliklar", link: "/news" },
     { name: "Bo'limlar", link: "/catalogs" },
     { name: "Muassasalar", link: "/institutions" },
+    { name: "Rahbariyat", link: "/leadership" },
+    { name: "Birlashma haqida", link: "/about" },
     { name: "Aloqa", link: "/contact" },
   ];
   let [open, setOpen] = useState(false);
@@ -36,9 +38,8 @@ const NavBar = () => {
         </div>
 
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in-out ${
-            open ? "top-20 " : "top-[-490px] flex "
-          }`}
+          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in-out ${open ? "top-20 " : "top-[-490px] flex "
+            }`}
         >
           {Links.map((link) => (
             <li
