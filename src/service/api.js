@@ -1,11 +1,9 @@
 import axios from "axios";
 
-// https://api.urganchttb.uz/api
-
 const api = axios.create({
-  baseURL: "http://localhost:8080/api",
+  baseURL: "https://api.urganchttb.uz/api",
   headers: {
-    "Access-Control-Allow-Origin": "http://localhost:8080/api",
+    "Access-Control-Allow-Origin": "https://api.urganchttb.uz/api",
     "Content-Type": "application/json",
   },
 });
