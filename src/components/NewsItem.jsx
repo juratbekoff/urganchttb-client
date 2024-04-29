@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { api_url } from "../helpers/api";
+import {api_url} from "../constants/index.js";
 
 const NewsItem = ({ items }) => {
   return (

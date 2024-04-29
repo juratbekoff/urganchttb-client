@@ -1,11 +1,11 @@
-import { Header } from "../components";
+import {Header} from "../components";
 
 const HeaderView = () => {
-  return (
-    <>
-      <Header />
-    </>
-  );
+    return (
+        <>
+            <Header/>
+        </>
+    );
 };
 
 export default HeaderView;

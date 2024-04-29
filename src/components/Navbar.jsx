@@ -8,6 +8,9 @@ const NavBar = () => {
     { name: "Yangiliklar", link: "/news" },
     { name: "Bo'limlar", link: "/catalogs" },
     { name: "Muassasalar", link: "/institutions" },
+    { name: "Hujjatlar", link: "https://ssv.ssv.uz/uz/documentation", target: "_blank" },
+    { name: "Bo'sh ish o'rinlari", link: "https://ish.mehnat.uz", target: "_blank" },
+    { name: "Ochiq ma'lumotlar", link: "/open-documents" },
     { name: "Rahbariyat", link: "/leadership" },
     { name: "Birlashma haqida", link: "/about" },
     { name: "Aloqa", link: "/contact" },
@@ -38,18 +41,19 @@ const NavBar = () => {
         </div>
 
         <ul
-          className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in-out ${open ? "top-20 " : "top-[-490px] flex "
+          className={`max-lg:shadow-md max-lg:border z-50 md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white left-0  w-full md:w-auto transition-all duration-500 ease-in-out ${open ? "top-20" : "top-[-490px] flex "
             }`}
         >
           {Links.map((link) => (
             <li
               key={link.name}
-              className="md:ml-8 text-xl md:my-0 my-7"
+              className="ml-8 md:my-0 my-4 "
               onClick={() => setOpen(false)}
             >
               <Link
                 to={link.link}
-                className="text-gray-800 text-[17px] hover:text-gray-400 duration-500"
+                target={link.target}
+                className="text-gray-800 text-sm max-md:text-base hover:text-gray-400 duration-500"
               >
                 {link.name}
               </Link>

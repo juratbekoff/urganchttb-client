@@ -25,7 +25,7 @@ const NewsView = () => {
 
   return (
     <div className="flex flex-col mx-[10%] gap-5 mt-2">
-      <div className="flex justify-between items-center border-b-2 border-t-2 py-3">
+      <div className="flex justify-between items-center border-b-2  py-3">
         <h2 className="text-2xl font-semibold p-0 m-0 max-md:text-[16px]">
           Yangiliklar
         </h2>

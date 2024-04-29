@@ -1,0 +1,10 @@
+export { default as Home } from "./Home";
+export { default as Catalogs } from "./Catalogs";
+export { default as Header } from "./Header";
+export { default as Institutions } from "./Institutions";
+export { default as News } from "./News";
+export { default as AllNews } from "./AllNews";
+export { default as Contacts } from "./Contacts";
+export { default as NewsItem } from "./NewsItem";
+export { default as Leadership } from "./Leadership";
+export { default as OpenDocuments } from "./OpenDocuments.jsx";

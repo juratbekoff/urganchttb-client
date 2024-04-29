@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
-import { api_url } from "../helpers/api";
+
+import {api_url} from "../constants/index.js";
 
 const Leadership = ({ ...items }) => {
   return (

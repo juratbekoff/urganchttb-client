@@ -1,13 +1,14 @@
 import { Route, Routes } from "react-router-dom";
 import {
-  HomeView,
-  CatalogsView,
-  InstitutionsView,
-  AllNewsView,
-  ContactsView,
-  NewsItemView,
-  LeadershipView,
-} from "../pages";
+  Home,
+  Catalogs,
+  Institutions,
+  AllNews,
+  Contacts,
+  NewsItem,
+  Leadership,
+  OpenDocuments,
+} from "../pages/index.js";
 import { About } from "../components";
 
 export const ClientRouter = () => {
@@ -15,14 +16,15 @@ export const ClientRouter = () => {
     <>
       <Routes>
         <Route path="/">
-          <Route path="/" element={<HomeView />} />
-          <Route path="/catalogs" element={<CatalogsView />} />
-          <Route path="/institutions" element={<InstitutionsView />} />
-          <Route path="/contact" element={<ContactsView />} />
-          <Route path="/news" element={<AllNewsView />} />
-          <Route path="/item/:newsId" element={<NewsItemView />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/catalogs" element={<Catalogs />} />
+          <Route path="/institutions" element={<Institutions />} />
+          <Route path="/contact" element={<Contacts />} />
+          <Route path="/news" element={<AllNews />} />
+          <Route path="/item/:newsId" element={<NewsItem />} />
           <Route path="/about" element={<About />} />
-          <Route path="/leadership" element={<LeadershipView />} />
+          <Route path="/leadership" element={<Leadership />} />
+          <Route path="/open-documents" element={<OpenDocuments />} />
         </Route>
       </Routes>
     </>

@@ -1,12 +1,12 @@
-import { NewsView, HeaderView } from ".";
+import {Header, News} from ".";
 
-const HomeView = () => {
+const Home = () => {
   return (
     <>
-      <HeaderView />
-      <NewsView />
+        <Header/>
+        <News/>
     </>
   );
 };
 
-export default HomeView;
+export default Home;

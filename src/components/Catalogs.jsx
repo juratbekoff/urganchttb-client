@@ -1,4 +1,4 @@
-import { api_url } from "../helpers/api";
+import {api_url} from "../constants/index.js";
 
 const Catalogs = ({ ...elem }) => {
   return (
