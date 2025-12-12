@@ -3,7 +3,7 @@ import { ClientRouter } from "./routes";
 
 const App = () => {
   return (
-    <div className="container m-auto w-[100%] p-0 box-border">
+    <div className="w-full min-h-screen">
       <Navbar />
       <ClientRouter />
       <Footer />

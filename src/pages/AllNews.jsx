@@ -26,7 +26,7 @@ const AllNewsView = () => {
             <div className="flex justify-between items-center border-b-2 py-3">
                 <h2 className="text-xl font-semibold p-0 m-0">Barcha Yangiliklar</h2>
             </div>
-            <div className="flex flex-wrap gap-3 justify-start px-4">
+            <div className="flex flex-wrap gap-4 justify-start">
                 {items?.map((elem, index) => {
                     return <NewsCard key={index} {...elem} />;
                 })}

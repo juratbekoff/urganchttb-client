@@ -33,7 +33,7 @@ const NewsView = () => {
           Barchasini o'qish -{">"}
         </Link>
       </div>
-      <div className="flex flex-wrap gap-3 justify-start px-4">
+      <div className="flex flex-wrap gap-4 justify-start">
         {items.length === 0
           ? "Malumotlar topilmadi"
           : items?.map((elem, index) => {
