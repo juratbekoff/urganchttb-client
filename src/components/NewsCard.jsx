@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import "./css/news.css";
 
+// "2025-12-13T04:13:07.000Z" -> "2025-12-13, 04:13:07"
+const formatDate = (date) =>
+  date ? `${date.slice(0, 10)}, ${date.slice(11, 19)}` : "-";
+
 /* eslint-disable react/no-unescaped-entities */
 const NewsCard = ({ ...elem }) => {
   return (
@@ -33,6 +37,17 @@ const NewsCard = ({ ...elem }) => {
           ></path>
         </svg>
       </Link>
+
+      <div className="mt-4 pt-3 border-t border-gray-100 flex flex-col gap-1 text-[13px] italic max-md:text-[12px]">
+        <p>
+          <span className="text-orange-500 font-medium">chop etildi: </span>
+          <b className="font-medium">{formatDate(elem.createdAt)}</b>
+        </p>
+        <p>
+          <span className="text-orange-500 font-medium">oxirgi yangilanish: </span>
+          <b className="font-medium">{formatDate(elem.updatedAt)}</b>
+        </p>
+      </div>
     </div>
   );
 };

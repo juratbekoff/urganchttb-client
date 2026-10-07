@@ -1,9 +1,9 @@
 import axios from "axios";
+import { api_url } from "../constants/index.js";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
+  baseURL: api_url,
   headers: {
-    "Access-Control-Allow-Origin": "https://api.urganch-ttb.uz/",
     "Content-Type": "application/json",
   },
 });
